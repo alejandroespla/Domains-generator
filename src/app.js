@@ -1,5 +1,5 @@
 
-window.onload = function() {
+window.onload = function generateDomain() {
   //write your code here
 
   let domainElement = document.querySelector('#domain'); 
@@ -14,6 +14,6 @@ window.onload = function() {
   let nounIndex = Math.floor(Math.random() * noun.length);  
   let extensionIndex = Math.floor(Math.random() * extension.length);  
   
-  let domain = `${pronoun[pronounIndex]} ${adj[adjIndex]} ${noun[nounIndex]} ${extension[extensionIndex]}`;  
+  let domain = `${pronoun[pronounIndex]}${adj[adjIndex]}${noun[nounIndex]}${extension[extensionIndex]}`;  
   domainElement.textContent = domain;
 };
